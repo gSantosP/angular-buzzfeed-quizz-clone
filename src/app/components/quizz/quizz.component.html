@@ -6,23 +6,22 @@
   </div>
 
   <div *ngIf=!finished class="quizz_questions">
-      <h3>{{questionSelected.question}}</h3>
+    <h3>{{questionSelected.question}}</h3>
   </div>
 
   <div *ngIf=!finished class="quizz_options">
 
-    <button
-      *ngFor="let option of questionSelected.options; let i = index"
-      (click)="playerChoose(option.alias)"
-      class="btn-option"
-    >
+    <button *ngFor="let option of questionSelected.options; let i = index" (click)="playerChoose(option.alias)"
+      class="btn-option">
       {{option.name}}
     </button>
 
   </div>
 
   <div *ngIf=finished class="quizz_results">
-    <h1>O Seu resultado é:</h1>
-    <p>{{answerSelected}}</p>
+    <h1>Your result is:</h1>
+    <h4>{{answerSelected}}</h4>
+    <img src="/assets/imgs/lizard.gif" alt="(GIF Loading...)" srcset="">
+
   </div>
 </div>

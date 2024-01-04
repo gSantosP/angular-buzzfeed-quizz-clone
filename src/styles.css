@@ -5,8 +5,10 @@
   border:0;
   box-sizing: border-box;
   color:antiquewhite;
+  font-family: 'Segoe UI';
 }
 
 body{
-  background-color: #1F1147;
+  background-color: #bd081c;
+  font-family: 'Segoe UI';
 }
